@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;&family=Roboto:wght@300&display=swap');
+
+*{
+  margin: 20;
+  padding: 20;
+  box-sizing: border-box;
+  color: rgb(1, 19, 103);
+  font-family: 'Noto Sans';
+  background-color: rgb(222, 238, 255);
+}
+
+.liNav{
+  list-style: none;
+}
+
+/*Header - Pendiente alinear items del nav*/
+
+/*main index*/
+.mainSection{
+  width: 30%;
+  border: 2px solid rgb(1, 19, 103);
+  margin: 0 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.6);
+  }
+.staff{
+  width: 100%;
+  margin:0px;
+  padding: 0px;
+}
+/*main medicamentos - Pendiente css*/
+
+
+/*main noticias - Pendiente css*/
+
+h1{
+  background-color:rgb(126, 205, 15);
+}
+
+/*Tienda*/
+.cardConteiner{
+  width: 90%;
+  margin: auto;
+  
+  .card{
+    width: 30%;
+    border: 2px solid rgb(1, 19, 103);
+    margin: 0 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.6);
+    
+    .imgCard{
+      width: 100%;
+      margin:0px;
+      padding: 0px;
+    }
+    .bodyCard{
+      margin: 0px;
+      padding:0px 10px 0px 10px;
+      .sale{
+        
+        text-align: center;
+      }
+      .priceCard{
+        color:rgb(126, 205, 15);
+        font-weight: bold;
+        font-size: 1.2rem;
+        background-color: rgb(1, 19, 103);
+        text-align: center;
+      }
+
+    }
+  }
+}
+/*Main contacto - Pendiente css*/
+
+/*footer*/
+
+.location{
+  width: 10%;
+  height: 10%;
+}
