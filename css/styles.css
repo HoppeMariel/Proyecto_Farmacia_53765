@@ -9,74 +9,70 @@
   background-color: rgb(222, 238, 255);
 }
 
+/*Header*/
 .liNav{
   list-style: none;
 }
 
-/*Header - Pendiente alinear items del nav*/
+.bgAnchor{
+  background-color: rgb(1, 19, 103);
+} 
 
 /*main index*/
-.mainSection{
-  width: 30%;
-  border: 2px solid rgb(1, 19, 103);
-  margin: 0 10px 10px 10px;
-  border-radius: 10px 10px 10px 10px;
-  box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.6);
-  }
-.staff{
-  width: 100%;
-  margin:0px;
-  padding: 0px;
-}
-/*main medicamentos - Pendiente css*/
-
-
-/*main noticias - Pendiente css*/
-
 h1{
   background-color:rgb(126, 205, 15);
 }
 
 /*Tienda*/
-.cardConteiner{
-  width: 90%;
-  margin: auto;
-  
-  .card{
-    width: 30%;
-    border: 2px solid rgb(1, 19, 103);
-    margin: 0 10px 10px 10px;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.6);
-    
-    .imgCard{
-      width: 100%;
-      margin:0px;
-      padding: 0px;
-    }
-    .bodyCard{
-      margin: 0px;
-      padding:0px 10px 0px 10px;
-      .sale{
-        
-        text-align: center;
-      }
-      .priceCard{
-        color:rgb(126, 205, 15);
-        font-weight: bold;
-        font-size: 1.2rem;
-        background-color: rgb(1, 19, 103);
-        text-align: center;
-      }
-
-    }
-  }
+.priceCard{
+  color:rgb(126, 205, 15);
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: rgb(1, 19, 103);
+  text-align: center;
 }
-/*Main contacto - Pendiente css*/
+
+/*Main contacto */
+
+.sendButton{
+  background-color: rgb(1, 19, 103);
+  border-color: rgb(1, 19, 103);
+}
 
 /*footer*/
+.icon{
+  text-decoration: none;
+}
+.fa-facebook-f{
+  color: rgb(24, 119, 242);
+  font-size: 2rem;
+  }
+.fa-instagram{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem; /* change this to change the size*/
+}
+.fa-tiktok {
+  color:rgb(1, 19, 103);
+  font-size: 2rem;
+}
+.fa-x-twitter{
+  color:rgb(119, 119, 119);
+  font-size: 2rem;
+}
+.fa-whatsapp{
+  color: rgb(37, 211, 102);
+  font-size: 2rem;
+}
 
-.location{
-  width: 10%;
-  height: 10%;
+
+@media(max-width:9000px){
+  .noticias {
+    display:flex;
+    flex-direction: column;
+  }
+
 }

@@ -6,66 +6,112 @@
   <script src="https://kit.fontawesome.com/784ed09b1e.js" crossorigin="anonymous"></script>
   <title>Farmacia Noble </title>
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-  <header>
-    <img src="../assets/img/logo.svg" alt="Logo Farmacia">
+  <header class="header position-sticky top-0">
     <nav>
-      <ul>
-        <li class="liNav"><a href="../index.html">Inicio</a></li>
-        <li class="liNav"><a href="./medicamentos.html">Comprar receta</a></li>
-        <li class="liNav"><a href="./tienda.html">Tienda</a></li>
-        <li class="liNav"><a href="./noticias.html">Noticias</a></li>
-        <li class="liNav"><a href="./contacto.html">Contacto</a></li>
-      </ul>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <a class="navbar-brand" href="../index.html">
+              <img class="logo" src="../assets/img/logo.svg" alt="Logo Farmacia Noble" width="100" height="48">
+            </a>
+          </div>
+          <div class="col">
+            <ul class="nav nav-pills nav-fill">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./medicamentos.html">Comprar receta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./noticias.html">Noticias</a>
+              </li><li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
   <main>
-    <h1>Comprar receta</h1>
-    <p>Podés enviarnos tu receta  digital o en papel. Las recetas y bonos en formato papel deberán ser entregados al momento de recibir el producto</p>
-    <h3>Para canjear una receta siga los siguientes pasos:</h3>
-    <ol>
-      <li>Verifique si trabajamos su cobertura médica:
-        <ul>
-          <li>Accord Salud</li>
-          <li>Galeno</li>
-          <li>Medicus</li>
-          <li>Omint</li>
-          <li>Osde</li>
-          <li>Swiss Medical</li>
-        </ul>
+    <h1 class="text-center pt-2 pb-2 fs-2 fw-bold">Comprar receta</h1>
+    <h3 class="text-center ps-2">Podés enviarnos tu receta  digital o en papel.</h3>
+    <h3 class="text-center ps-2">Las recetas y bonos en formato papel deberán ser entregados al momento de recibir el producto</h3>
+    <h4 class="text-start ps-4">Para canjear una receta siga los siguientes tres simples pasos:</h4>
+    <div class="row g-0 text-center">
+  <div class="col-sm-6 col-md-8 text-start ps-4">
+    <ol class="text-start">
+      <li>Verifique que trabajamos su <a href="#cobMed">cobertura médica</a> o <a href="bonoDesc">bono de descuento</a> haciendo click en los enlaces correspondientes.</li>
       <li>Los pedidos realizados de 9 a 13, se envían o retiran a partir de las 14hs. 
         El envío o retiro se coordina por Whatsapp. 
         Si desea recibir el pedido en su domicilio, verifique nuestra zona de cobertura:</li>
-        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1zMrpd11MKDvt1yL2sNnnGMmre0uNdcw&ehbc=2E312F" width="640" height="480"></iframe>
+        <iframe class="pt-2" src="https://www.google.com/maps/d/u/0/embed?mid=1zMrpd11MKDvt1yL2sNnnGMmre0uNdcw&ehbc=2E312F" width="300" height="300"></iframe>
       <li>Para enviar tu receta hacé <a href="https://www.whatsapp.com/" target="_blank">click aquí</a></li>
     </ol>
+  </div>
+  <div class="col-6 col-md-4 text-right">
+    <h5 class="cobMed text-decoration-underline" >Coberturas médicas</h5>
+    <ul>
+      <li class="list-group-item">Accord Salud</li>
+      <li class="list-group-item">Galeno</li>
+      <li class="list-group-item">Medicus</li>
+      <li class="list-group-item">Omint</li>
+      <li class="list-group-item">Osde</li>
+      <li class="list-group-item">Swiss Medical</li>
+    </ul>
+    <h5 class="bonoDesc text-decoration-underline">Bonos de descuento</h5>
+    <ul>
+      <li class="list-group-item">Andrómaco</li>
+      <li class="list-group-item">Cassará</li>
+      <li class="list-group-item">Fortbenton</li>
+      <li class="list-group-item">Panalab</li>
+      <li class="list-group-item">PAP</li>
+    </ul>
+   
+  </div>
+</div>    
   </main>
-  <footer>
-    <section>
-      <h4>Ubicación</h4>
-      <p>Av. Corrientes 1801, CABA</p>
-      <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9965271887577!2d-58.39455833132518!3d-34.60424932545177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac198206de7%3A0x31a4c79ffb528624!2sAv.%20Corrientes%20%26%20Av.%20Callao%2C%20C1042%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1707269433509!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-    <section><h4>Seguinos en nuestras redes sociales</h4>
-      <a href="https://www.facebook.com/" target="_blank">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
-      <a href="https://www.instagram.com/" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="https://www.tiktok.com/" target="_blank">
-        <i class="fa-brands fa-tiktok"></i>
-      </a>
-      <a href="https://twitter.com/" target="_blank">
-        <i class="fa-brands fa-x-twitter"></i>
-      </a>
-      <a href="https://www.whatsapp.com/" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-    </section>
-     <p>Todos los derechos reservados - 2024</p>
+  <footer class="container-fluid text-center">
+    <div class="row row-cols-3">
+      <div class="col pt-4">
+        <h4 class="text-decoration-underline">Ubicación</h4>
+          <p>Av. Corrientes 1801, CABA</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9965271887577!2d-58.39455833132518!3d-34.60424932545177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac198206de7%3A0x31a4c79ffb528624!2sAv.%20Corrientes%20%26%20Av.%20Callao%2C%20C1042%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1707269433509!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col pt-4">
+        <h4 class="text-decoration-underline ms-1">Contacto</h4>
+        <p>011-5555-1234</p>
+        <p>contacto@farmacianoble.com.ar</p>
+      </div>
+      <div class="col pt-4">
+        <h4 class="text-decoration-underline ms-1">Seguinos en nuestras redes sociales</h4>
+          <a href="https://www.facebook.com/" target="_blank">
+           <i class="icon fa-brands fa-facebook-f fs-3 pe-4"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="icon fa-brands fa-instagram fs-3 pe-4"></i>
+          </a>
+          <a href="https://www.tiktok.com/" target="_blank">
+            <i class="icon fa-brands fa-tiktok fs-3 pe-4"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <i class="icon fa-brands fa-x-twitter fs-3 pe-4"></i>
+          </a>
+          <a href="https://www.whatsapp.com/" target="_blank">
+            <i class="icon fa-brands fa-whatsapp fs-3 pe-4"></i>
+          </a>
+      </div>
+    </div>
+    <p>Todos los derechos reservados - 2024</p>
   </footer>
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

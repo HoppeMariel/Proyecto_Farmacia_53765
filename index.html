@@ -6,64 +6,103 @@
   <script src="https://kit.fontawesome.com/784ed09b1e.js" crossorigin="anonymous"></script>
   <title>Farmacia Noble</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-  <header>
-    <!--Nombre de la farmacia pendiente-->
-    <img src="./assets/img/logo.svg" alt="Logo Farmacia">
+  <header class="header position-sticky top-0">
     <nav>
-      <ul>
-        <li class="liNav"><a href="#">Inicio</a></>
-        <li class="liNav"><a href="./pages/medicamentos.html">Comprar receta</a></li>
-        <li class="liNav"><a href="./pages/tienda.html">Tienda</a></li>
-        <li class="liNav"><a href="./pages/noticias.html">Noticias</a></li>
-        <li class="liNav"><a href="./pages/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <a class="navbar-brand" href="#">
+            <img class="logo" src="./assets/img/logo.svg" alt="Logo Farmacia Noble" width="100" height="48">
+          </a>
+        </div>
+        <div class="col">
+          <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/medicamentos.html">Comprar receta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/noticias.html">Noticias</a>
+            </li><li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
   </header>
   <main>
-    <h1>Inicio</h1>
-    <section class="mainSection">
-      <h3>Nuestra historia</h3>
-      <p>Farmacia Noble surge en agosto de 1990 como un sueño familiar.</p> 
-      <p>Atendida desde sus orígenes por Bernardo y Bianca Noble, ambos profesionales farmacéuticos, crecimos tanto en el rubro farmacéutico como en el area de salud y belleza, ganando la confianza y el cariño de nuestros clientes, que siempre vuelven en busca de consejos y sugerencias.</p>
-    </section>
-    <section class="mainSection">
-      <h3>Nuestra misión</h3>
-      <p>Desde el inicio, nuestra misión es brindar un servicio de calidad orientada a nuestros clientes, con la premisa de que la satisfacción de nuestros clientes es lo primero.</p>
-      <p>Es a ellos a quien abocamos nuestra dedicación y brindamos servicios y productos de calidad. </p>
-    </section>
-    <section class="mainSection">
-      <h3>Nuestro staff</h3>
-      <img class="staff" src="./assets/img/staff.jpg" alt="Imagen del personal de Farmacia">
-      <p>Les presentamos a las maravillosas personas que forman parte de nuestro equipo, quienes están capacitados para asesorar a nuestros clientes y brindar los mejores consejos de farmacia, perfumería y dermocosmética.</p>
-    </section>
+    <h1 class="text-center pt-2 pb-2 fs-2 fw-bold" >Bienvenidos a Farmacia Noble</h1>
+    <div class="container-fluid text-left">
+      <div class="row  pt-4">
+        <div class="col-4">
+          <section class="m-3 border border-1 rounded-bottom shadow p-3">
+            <h3 class="fw-bold text-decoration-underline">Nuestra historia</h3>
+            <p class="fs-5">Farmacia Noble surge en agosto de 1990 como un sueño familiar.</p> 
+            <p class="fs-5">Atendida desde sus orígenes por Bernardo y Bianca Noble, ambos profesionales farmacéuticos, crecimos tanto en el rubro farmacéutico como en el area de salud y belleza, ganando la confianza y el cariño de nuestros clientes, que siempre vuelven en busca de consejos y sugerencias.</p>
+          </section>
+        </div>
+        <div class="col-4">
+          <section class="m-3 border border-1 rounded-bottom shadow p-3" width="30%">
+            <h3 class="fw-bold text-decoration-underline">Nuestra misión</h3>
+            <p class="fs-5 text-left">Desde el inicio, nuestra misión es brindar un servicio de calidad orientada a nuestros clientes, con la premisa de que la satisfacción de nuestros clientes es lo primero.</p>
+            <p class="fs-5 text-left">Es a ellos a quien abocamos nuestra dedicación, ofreciendo productos de calidad y asesorarando a nuestros clientes en farmacia, perfumería y dermocosmética.</p>
+          </section>
+        </div>
+        <div class="col-4">
+          <section class="m-3 border border-1 rounded-bottom shadow p-3" width="30%">
+            <h3 class="fw-bold text-decoration-underline">Nuestro staff</h3>
+            <p class="fs-5">Les presentamos a las maravillosas personas que forman parte de nuestro equipo.</p>
+            <p class="fs-5">Están siempre dispuestos a asesorarte!</p>
+            <img class="card-img-bottom" src="./assets/img/staff.jpg" alt="Imagen del personal de Farmacia">
+          </section>
+        </div>
+      </div>
+    </div>
   </main>
-  <footer>
-    <section>
-      <h4>Ubicación</h4>
-      <p>Av. Corrientes 1801, CABA</p>
-      <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9965271887577!2d-58.39455833132518!3d-34.60424932545177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac198206de7%3A0x31a4c79ffb528624!2sAv.%20Corrientes%20%26%20Av.%20Callao%2C%20C1042%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1707269433509!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-    <section><h4>Seguinos en nuestras redes sociales</h4>
-      <a href="https://www.facebook.com/" target="_blank">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
-      <a href="https://www.instagram.com/" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="https://www.tiktok.com/" target="_blank">
-        <i class="fa-brands fa-tiktok"></i>
-      </a>
-      <a href="https://twitter.com/" target="_blank">
-        <i class="fa-brands fa-x-twitter"></i>
-      </a>
-      <a href="https://www.whatsapp.com/" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-    </section>
-     <p>Todos los derechos reservados - 2024</p>
+  <footer class="container-fluid text-center">
+    <div class="row row-cols-3">
+      <div class="col pt-4">
+        <h4 class="text-decoration-underline">Ubicación</h4>
+          <p>Av. Corrientes 1801, CABA</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9965271887577!2d-58.39455833132518!3d-34.60424932545177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac198206de7%3A0x31a4c79ffb528624!2sAv.%20Corrientes%20%26%20Av.%20Callao%2C%20C1042%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1707269433509!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col pt-4">
+        <h4 class="text-decoration-underline ms-1">Contacto</h4>
+        <p>011-5555-1234</p>
+        <p>contacto@farmacianoble.com.ar</p>
+      </div>
+      <div class="col pt-4">
+        <h4 class="text-decoration-underline ms-1">Seguinos en nuestras redes sociales</h4>
+          <a href="https://www.facebook.com/" target="_blank">
+           <i class="icon fa-brands fa-facebook-f fs-3 pe-4"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="icon fa-brands fa-instagram fs-3 pe-4"></i>
+          </a>
+          <a href="https://www.tiktok.com/" target="_blank">
+            <i class="icon fa-brands fa-tiktok fs-3 pe-4"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <i class="icon fa-brands fa-x-twitter fs-3 pe-4"></i>
+          </a>
+          <a href="https://www.whatsapp.com/" target="_blank">
+            <i class="icon fa-brands fa-whatsapp fs-3 pe-4"></i>
+          </a>
+      </div>
+    </div>
+    <p>Todos los derechos reservados - 2024</p>
   </footer>
+  <script src="./js/bootstrap.bundle.min.js""></script>
 </body>
 </html>

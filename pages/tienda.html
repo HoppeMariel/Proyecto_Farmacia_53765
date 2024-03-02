@@ -4,127 +4,176 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/784ed09b1e.js" crossorigin="anonymous"></script>
-  <title>Farmacia </title>
+  <title>Farmacia Noble</title>
   <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-  <header>
-    <img src="../assets/img/logo.svg" alt="Logo Farmacia">
-    <nav class="navBar">
-      <ul>
-        <li class="liNav"><a href="../index.html">Inicio</a></li>
-        <li class="liNav"><a href="./medicamentos.html">Comprar receta</a></li>
-        <li class="liNav"><a href="./tienda.html">Tienda</a></li>
-        <li class="liNav"><a href="./noticias.html">Noticias</a></li>
-        <li class="liNav"><a href="./contacto.html">Contacto</a></li>
-      </ul>
+  <header class="header position-sticky top-0">
+    <nav mt-2 mb-2>
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <a class="navbar-brand" href="../index.html">
+              <img class="logo" src="../assets/img/logo.svg" alt="Logo Farmacia Noble" width="100" height="48">
+            </a>
+          </div>
+          <div class="col">
+            <ul class="nav nav-pills nav-fill">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./medicamentos.html">Comprar receta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./noticias.html">Noticias</a>
+              </li><li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
+
   <main>
-    <h1>Tienda</h1>
-    <h2 class="Ofertas">Estas son las ofertas de esta semana</h2>
-    <h3>Podés acceder a nuestro catálogo completo haciendo <a href="https://www.mercadolibre.com.ar/" target="_blank">aquí</a></h3>
-    <section class="cardConteiner">
-      <div class="card">
-        <img class="imgCard" src="../assets/img/Productos con descuento/Set_Carolina_Herrera.webp" alt="Imagen del set Girl Blush">
-        <section class="bodyCard">
-          <h3 class="Ofertas">Set Good Girl Blush Carolina Herrera</h3>
-          <p class="priceCard">$180.000</p>
-          <p class="detailCard">Incluye Good Girl Blush EDP x 80 mL + Mini Fabulous Kiss Lipstick Blur Matte 741 Nude Supreme + Travel Size x 10 mL/p>
-        </section>
-      </div>  
-      <div class="card">
-        <img class="imgCard" src="../assets/img/Productos con descuento/Tommy.webp" alt="Imagen del perfume y el bolso">
-        <section class="bodyCard">
-          <h3 class="sale">Set Tommy Men Tommy Hilfiger</h3>
-          <p class="priceCard">$155.000</p>
-          <p class="detailCard">Tommy Men EDT x 100 mL + Bolso a elección de regalo</p>          
-        </section>
-      </div>      
-      <div class="card">
-        <img class="imgCard" src="../assets/img/Productos con descuento/Fame.webp" alt="Imagen del perfume y el body lotion">
-        <section class="bodyCard">
-          <h3 class="sale">Set Fame Mujer Paco Rabanne Fame</h3>
-          <p class="priceCard">$170.000</p>
-          <p class="detailCard">Fame EDT x 80 mL + Body Lotion x 100 mL</p>
-        </section>
-      </div>      
-      <div class="card">
-        <img class="imgCard" src="../assets/img/Productos con descuento/Ga-ma_Cepillo_Alisador.webp" alt="Imagen del Cepillo Alisador Ga-ma">
-        <section class="bodyCard">
-          <h3 class="sale">Gama Cepillo Alisador De Pelo Modelador Glamour Brush</h3>
-          <p class="priceCard">$60.000</p>
-          <p class="detailCard">Potencia: 1300W - Control de temperatura - Cerdas cerámicas</p>          
-        </section>
-      </div>      
-      <div class="card">
-        <img class="imgCard" src="../assets/img/Productos con descuento/Afeitadora_Ga-ma.webp" alt="Imágen de la Afeitadora Gama Italy">
-        <section class="bodyCard">
-          <h3 class="sale">Afeitadora Gama Italy BECSH311 Negra</h3>
-          <p class="priceCard">$100.000</p>
-          <p class="detailCard">Incluye 4 peines de alzada (3, 6, 9 y 12mm),aceite lubricante, cepillo de limpieza, peine de barba y base organizador</p>          
-        </section>
+    <h1 class="text-center pt-2 pb-2 fs-2 fw-bold">Tienda</h1>
+    <p class="fs-5 text-center p-auto" >Estas son las ofertas de esta semana. Podés acceder a nuestro catálogo completo haciendo <a href="https://www.mercadolibre.com.ar/" target="_blank">aquí</a></p>
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card">
+          <img src="../assets/img/Productos con descuento/Set_Carolina_Herrera.webp" alt="Imagen del set Girl Blush" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Set Good Girl Blush Carolina Herrera</h5>
+            <p class="priceCard">$180.000</p>
+            <p class="card-text">Incluye Good Girl Blush EDP x 80 mL + Mini Fabulous Kiss Lipstick Blur Matte 741 Nude Supreme + Travel Size x 10 mL.</p>
+          </div>
+        </div>
       </div>
-      <div class="card">
-        <img class="imgCard" src="../assets/img/Productos con descuento/Omron.webp" alt="Imagen del tensiómetro Omron de muñeca">
-        <section class="bodyCard">
-          <h3 class="sale">Tensiómetro Omron Hem-6123 De Muñeca  </h3>
-          <p class="priceCard">$55.000</p>
-          <p class="detailCard">Incluye pilas y estuche</p>          
-        </section>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/img/Productos con descuento/Tommy.webp" alt="Imagen del perfume y el bolso" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Set Tommy Men Tommy Hilfiger</h5>
+            <p class="priceCard">$155.000</p>
+            <p class="card-text">Tommy Men EDT x 100 mL + Bolso a elección de regalo.</p>
+          </div>
+        </div>
+      </div>            
+      <div class="col">
+        <div class="card">
+          <img  src="../assets/img/Productos con descuento/Fame.webp" alt="Imagen del perfume y el body lotion" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Set Fame Mujer Paco Rabanne Fame</h5>
+            <p class="priceCard">$170.000</p>
+            <p class="card-text">Fame EDT x 80 mL + Body Lotion x 100 mL</p>
+          </div>
+        </div>
       </div>
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card">
+          <img src="../assets/img/Productos con descuento/Ga-ma_Cepillo_Alisador.webp" alt="Imagen del Cepillo Alisador Ga-ma" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Gama Cepillo Alisador De Pelo Modelador Glamour Brush</h5>
+            <p class="priceCard">$60.000</p>
+            <p class="card-text">Potencia: 1300W - Control de temperatura - Cerdas cerámicas</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/img/Productos con descuento/Afeitadora_Ga-ma.webp" alt="Imágen de la Afeitadora Gama Italy" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Afeitadora Gama Italy BECSH311 Negra</h5>
+            <p class="priceCard">$100.000</p>
+            <p class="card-text">Incluye 4 peines de alzada (3, 6, 9 y 12mm),aceite lubricante, cepillo de limpieza, peine de barba y base organizador.</p>
+          </div>
+        </div>
+      </div>    
+      <div class="col">
+        <div class="card">
+          <img src="../assets/img/Productos con descuento/Omron.webp" alt="Imagen del tensiómetro Omron de muñeca" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Tensiómetro Omron Hem-6123 De Muñeca</h5>
+            <p class="priceCard">$55.000</p>
+            <p class="card-text">Incluye pilas y estuche.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+    <div class="col">
       <div class="card">
-        <img class="imgCard" src="../assets/img/Productos con descuento/Combo_Dermaglos_Solar.webp" alt="Imagen de los productos del combo Dermaglós">
-        <section class="bodyCard">
-          <h3 class="sale">Combo Dermaglós Solar</h3>
+        <img src="../assets/img/Productos con descuento/Combo_Dermaglos_Solar.webp" alt="Imagen de los productos del combo Dermaglós" class="card-img-top">
+        <div class="card-body">
+          <h5 class="sale">Combo Dermaglós Solar</h5>
           <p class="priceCard">$28.000</p>
-          <p class="detailCard">Dermaglós Solar Combo Protección Completa A Toda La Familia</p>
-        </section>
+          <p class="card-text">Dermaglós Solar Combo Protección Completa A Toda La Familia.</p>
+        </div>
       </div>
+    </div>
+    <div class="col">
       <div class="card">
-        <img class="imgCard" src="../assets/img/Productos con descuento/Combo_Anticaida_Valcatil.webp" alt="Imagen de Cápsulas y Shampoo">
-        <section class="bodyCard">
-          <h3 class="sale">Combo Anticaída Valcatil Max</h3>
+        <img src="../assets/img/Productos con descuento/Combo_Anticaida_Valcatil.webp" alt="Imagen de Cápsulas y Shampoo" class="card-img-top">
+        <div class="card-body">
+          <h5 class="sale">Combo Anticaída Valcatil Max</h5>
           <p class="priceCard">$14.000</p>
-          <p class="detailCard">Incluye un envase de Valcatil Max x 30 Cápsulas y un shampoo Valcatil Max x 150 mL</p>
-        </section>      
+          <p class="card-text">Incluye un envase de Valcatil Max x 30 Cápsulas y un shampoo Valcatil Max x 150 mL.</p>
+        </div>
       </div>
+    </div>
+    <div class="col">
       <div class="card">
-        <img class="imgCard" src="../assets/img/Productos con descuento/Curflex_Duo.webp" alt="imagen Curflex Duo">
-        <section class="bodyCard">
-          <h3 class="sale">Curflex Duo x 310 g Sabor Naranja</h3>
+        <img src="../assets/img/Productos con descuento/Curflex_Duo.webp" alt="imagen Curflex Duo" class="card-img-top">
+        <div class="card-body">
+          <h5 class="sale">Curflex Duo x 310 g Sabor Naranja</h5>
           <p class="priceCard">$16.000</p>
-          <p class="detailCard">Colageno+ Magnesio+ A. Hialuronico+ Vit D X 310g Sabor Naranja</p>
-        </section>
+          <p class="card-text">Colageno+ Magnesio+ A. Hialuronico+ Vit D X 310g Sabor Naranja.</p>
+        </div>
       </div>
-    </section>
-           
+    </div>
+  </div>         
+        
   </main>
-  <footer>
-    <section>
-      <h4>Ubicación</h4>
-      <p>Av. Corrientes 1801, CABA</p>
-      <iframe class="location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9965271887577!2d-58.39455833132518!3d-34.60424932545177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac198206de7%3A0x31a4c79ffb528624!2sAv.%20Corrientes%20%26%20Av.%20Callao%2C%20C1042%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1707269433509!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-    <section><h4>Seguinos en nuestras redes sociales</h4>
-      <a href="https://www.facebook.com/" target="_blank">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
-      <a href="https://www.instagram.com/" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="https://www.tiktok.com/" target="_blank">
-        <i class="fa-brands fa-tiktok"></i>
-      </a>
-      <a href="https://twitter.com/" target="_blank">
-        <i class="fa-brands fa-x-twitter"></i>
-      </a>
-      <a href="https://www.whatsapp.com/" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-    </section>
-     <p>Todos los derechos reservados - 2024</p>
-  </footer>
+  <footer class="container-fluid text-center">
+    <div class="row row-cols-3">
+      <div class="col pt-4">
+        <h4 class="text-decoration-underline">Ubicación</h4>
+          <p>Av. Corrientes 1801, CABA</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9965271887577!2d-58.39455833132518!3d-34.60424932545177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac198206de7%3A0x31a4c79ffb528624!2sAv.%20Corrientes%20%26%20Av.%20Callao%2C%20C1042%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1707269433509!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col pt-4">
+        <h4 class="text-decoration-underline ms-1">Contacto</h4>
+        <p>011-5555-1234</p>
+        <p>contacto@farmacianoble.com.ar</p>
+      </div>
+      <div class="col pt-4">
+        <h4 class="text-decoration-underline ms-1">Seguinos en nuestras redes sociales</h4>
+          <a href="https://www.facebook.com/" target="_blank">
+           <i class="icon fa-brands fa-facebook-f fs-3 pe-4"></i>
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="icon fa-brands fa-instagram fs-3 pe-4"></i>
+          </a>
+          <a href="https://www.tiktok.com/" target="_blank">
+            <i class="icon fa-brands fa-tiktok fs-3 pe-4"></i>
+          </a>
+          <a href="https://twitter.com/" target="_blank">
+            <i class="icon fa-brands fa-x-twitter fs-3 pe-4"></i>
+          </a>
+          <a href="https://www.whatsapp.com/" target="_blank">
+            <i class="icon fa-brands fa-whatsapp fs-3 pe-4"></i>
+          </a>
+      </div>
+    </div>
+    <p>Todos los derechos reservados - 2024</p>
+  </footer>  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
