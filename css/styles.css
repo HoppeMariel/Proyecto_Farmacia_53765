@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;&family=Roboto:wght@300&display=swap');
 
 *{
-  margin: 20;
-  padding: 20;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   color: rgb(1, 19, 103);
   font-family: 'Noto Sans';
@@ -14,14 +14,17 @@
   list-style: none;
 }
 
-.bgAnchor{
-  background-color: rgb(1, 19, 103);
-} 
+.nav-pills .nav-link.active,
+.show>.nav-pills .nav-link{
+    background: rgb(1, 19, 103) !important;
+}
 
 /*main index*/
 h1{
   background-color:rgb(126, 205, 15);
 }
+/*Noticias*/
+
 
 /*Tienda*/
 .priceCard{
@@ -69,10 +72,14 @@ h1{
 }
 
 
-@media(max-width:9000px){
+@media screen and (max-width:800px) {
   .noticias {
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
-
 }
+
+
+  
+
+
