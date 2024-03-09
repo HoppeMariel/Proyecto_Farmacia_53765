@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/784ed09b1e.js" crossorigin="anonymous"></script>
   <title>Farmacia Noble</title>
+  <!--Favicon-->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!--Bootstrap  -->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- CSS -->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -45,68 +49,61 @@
     </nav>
   </header>
   <main>
-    <h1 class="text-center pt-2 pb-2 fs-2 fw-bold" >Bienvenidos a Farmacia Noble</h1>
-    <div class="inicio d-flex d-inline text-left">
-      <!--<div class="row  pt-4 row">-->
-        <div class="col">
-          <section class="m-3 border border-1 rounded-bottom shadow p-3">
-            <h3 class="fw-bold text-decoration-underline">Nuestra historia</h3>
-            <p class="fs-5">Farmacia Noble surge en agosto de 1990 como un sueño familiar.</p> 
-            <p class="fs-5">Atendida desde sus orígenes por Bernardo y Bianca Noble, ambos profesionales farmacéuticos, crecimos tanto en el rubro farmacéutico como en el area de salud y belleza, ganando la confianza y el cariño de nuestros clientes, que siempre vuelven en busca de consejos y sugerencias.</p>
-          </section>
-        </div>
-        <div class="col">
-          <section class="m-3 border border-1 rounded-bottom shadow p-3" width="30%">
-            <h3 class="fw-bold text-decoration-underline">Nuestra misión</h3>
-            <p class="fs-5 text-left">Desde el inicio, nuestra misión es brindar un servicio de calidad orientada a nuestros clientes, con la premisa de que la satisfacción de nuestros clientes es lo primero.</p>
-            <p class="fs-5 text-left">Es a ellos a quien abocamos nuestra dedicación, ofreciendo productos de calidad y asesorarando a nuestros clientes en farmacia, perfumería y dermocosmética.</p>
-          </section>
-        </div>
-        <div class="col">
-          <section class="m-3 border border-1 rounded-bottom shadow p-3" width="30%">
-            <h3 class="fw-bold text-decoration-underline">Nuestro staff</h3>
-            <p class="fs-5">Les presentamos a las maravillosas personas que forman parte de nuestro equipo.</p>
-            <p class="fs-5">Están siempre dispuestos a asesorarte!</p>
-            <img class="card-img-bottom" src="./assets/img/staff.jpg" alt="Imagen del personal de Farmacia">
-          </section>
+    <h1 class="text-center pt-2 pb-2 fs-2 fw-bold" style="background-color:rgba(126, 205, 15, 0.5)" >Bienvenidos a Farmacia Noble</h1>
+    <div class="container text-center">
+        <div class="row">
+          <div class="divInicio col-12 col-lg-4 mt-3 ps-3 pe-3">
+            <h4 class="hoverInicio fw-bold text-decoration-underline pt-3">Nuestra historia</h4>
+            <h6 class="hoverInicio text-start pt-2">Farmacia Noble surge en agosto de 1990 como un sueño familiar.</h6> 
+            <h6 class="hoverInicio text-start pt-2 pb-3">Atendida desde sus orígenes por Bernardo y Bianca Noble, ambos profesionales farmacéuticos, crecimos tanto en el rubro farmacéutico como en el area de salud y belleza, ganando la confianza y el cariño de nuestros clientes, que siempre vuelven en busca de consejos y sugerencias.</h6>
+          </div>
+          <div class="divInicio col-12 col-lg-4 mt-3 ps-3 pe-3">
+            <h4 class="hoverInicio fw-bold text-decoration-underline pt-3">Nuestra misión</h4>
+            <h6 class="hoverInicio text-start pt-2">Desde el inicio, nuestra misión es brindar un servicio de calidad orientada a nuestros clientes, con la premisa de priorizar que su satisfacción.</h6>
+            <h6 class="hoverInicio text-start pt-2 pb-3">Es a ellos a quien abocamos nuestra dedicación, ofreciendo productos de calidad y asesorarando a nuestros clientes en farmacia, perfumería y dermocosmética.</h6>
+          </div>
+          <div class="divInicio col-12 col-lg-4 mt-3 ps-3 pe-3">
+            <h4 class="hoverInicio fw-bold text-decoration-underline pt-3">Nuestro staff</h4>
+            <img class="card-img-bottom pt-2" style="width: 100%;" src="./assets/img/staff.jpg" alt="Imagen del personal de Farmacia">
+            <h6 class="hoverInicio text-start pt-2 pb-3">Les presentamos a las maravillosas personas que forman parte de nuestro equipo.</h6>
+          </div>
         </div>
       </div>
-    </div>
   </main>
   <footer class="container-fluid text-center">
-    <div class="row row-cols-3">
-      <div class="col pt-4">
-        <h4 class="text-decoration-underline">Ubicación</h4>
-          <p>Av. Corrientes 1801, CABA</p>
+    <div class="row">
+      <div class="col 12 col-lg-4 pt-2">
+        <h5 class="text-decoration-underline pt-2">Ubicación</h5>
+          <p class="pt-2">Av. Corrientes 1801, CABA</p>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9965271887577!2d-58.39455833132518!3d-34.60424932545177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac198206de7%3A0x31a4c79ffb528624!2sAv.%20Corrientes%20%26%20Av.%20Callao%2C%20C1042%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1707269433509!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <div class="col pt-4">
-        <h4 class="text-decoration-underline ms-1">Contacto</h4>
-        <p>Teléfono 011-5555-1234</p>
-        <p>Celular 011-15-999-8765</p>
-        <p>contacto@farmacianoble.com.ar</p>
+      <div class="col 12 col-lg-4 pt-2">
+        <h5 class="text-decoration-underline ms-1 pt-2">Contacto</h5>
+        <p class="pt-2">011-5555-1234</p>
+        <p class="pt-2">contacto@farmacianoble.com.ar</p>
       </div>
-      <div class="col pt-4">
-        <h4 class="text-decoration-underline ms-1">Seguinos en nuestras redes sociales</h4>
+      <div class="col 12 col-lg-4 pt-2">
+        <h5 class="text-decoration-underline ms-1 pt-2">Seguinos en nuestras redes sociales</h5>
         <span>
-          <a href="https://www.facebook.com/" target="_blank"><i class="icon fa-brands fa-facebook-f fs-3 pe-4"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="icon fa-brands fa-facebook-f fs-3 pe-4 pt-2"></i></a>
         </span>
         <span>
-          <a href="https://www.instagram.com/" target="_blank"><i class="icon fa-brands fa-instagram fs-3 pe-4"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="icon fa-brands fa-instagram fs-3 pe-4 pt-2"></i></a>
         </span>
         <span>
-          <a href="https://www.tiktok.com/" target="_blank"><i class="icon fa-brands fa-tiktok fs-3 pe-4"></i></a>
+          <a href="https://www.tiktok.com/" target="_blank"><i class="icon fa-brands fa-tiktok fs-3 pe-4 pt-2"></i></a>
         </span>
         <span>
-          <a href="https://twitter.com/" target="_blank"><i class="icon fa-brands fa-x-twitter fs-3 pe-4"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="icon fa-brands fa-x-twitter fs-3 pe-4 pt-2"></i></a>
         </span>
         <span>
-          <a href="https://www.whatsapp.com/" target="_blank"><i class="icon fa-brands fa-whatsapp fs-3 pe-4"></i></a>
-        </span>     
+          <a href="https://www.whatsapp.com/" target="_blank"><i class="icon fa-brands fa-whatsapp fs-3 pe-4 pt-2"></i></a>
+        </span>
       </div>
     </div>
-    <p>Todos los derechos reservados - 2024</p>
+    <p class="pt-2">Todos los derechos reservados - 2024</p>
   </footer>
+  <script src="./js/bootstrap.bundle.min.js""></script>
   <script src="./js/bootstrap.bundle.min.js""></script>
 </body>
 </html>

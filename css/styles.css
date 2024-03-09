@@ -10,39 +10,20 @@
 }
 
 /*Header*/
-.liNav{
-  list-style: none;
+/*Barra de navegacion*/
+.navbar{
+  background-color: rgba(184, 217, 252, 0.584);
 }
-
 .nav-pills .nav-link.active,
 .show>.nav-pills .nav-link{
     background: rgb(1, 19, 103) !important;
 }
 
-/*main index*/
-h1{
-  background-color:rgb(126, 205, 15);
-}
-/*Noticias*/
-
-
-/*Tienda*/
-.priceCard{
-  color:rgb(126, 205, 15);
-  font-weight: bold;
-  font-size: 1.2rem;
-  background-color: rgb(1, 19, 103);
-  text-align: center;
+/*Footer*/
+.footer__div{
+    background-color: aquamarine;
 }
 
-/*Main contacto */
-
-.sendButton{
-  background-color: rgb(1, 19, 103);
-  border-color: rgb(1, 19, 103);
-}
-
-/*footer*/
 .icon{
   text-decoration: none;
 }
@@ -71,15 +52,51 @@ h1{
   font-size: 2rem;
 }
 
-
-@media screen and (max-width:800px) {
-  .noticias {
-    display: flex;
-    flex-direction: column;
+/*Main inicio*/
+.divInicio{
+  border: 2px solid rgb(1, 19, 103);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 5px 5px 5px -5px rgba(0,0,0,0.6);
   }
+
+
+/*Main medicamentos*/
+
+
+/*Main Tienda*/
+.card{
+  border: 2px solid rgb(1, 19, 103);
+  margin: 0 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.6);
+  }
+
+.priceCard{
+  color:rgb(126, 205, 15);
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: rgb(1, 19, 103);
+  text-align: center;
+}
+/*Main Noticias*/
+
+/*Main Contacto*/
+
+.sendButton{
+  background-color: rgb(1, 19, 103);
+  border-color: rgb(1, 19, 103);
 }
 
-
-  
-
-
+/*Responsive*/
+@media screen and (max-width: 991px) {
+  .navbar-brand{
+    display: none;
+  }
+  .noticias{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  }
