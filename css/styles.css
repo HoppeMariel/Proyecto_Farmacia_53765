@@ -1,17 +1,326 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 2 | @import 'variables';
- *   |         ^^^^^^^^^^^
- *   '
- *   scss\styles.scss 2:9  root stylesheet */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;&family=Roboto:wght@300&display=swap');
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 2 \2502  @import 'variables';\d\a   \2502          ^^^^^^^^^^^\a   \2575 \a   scss\\styles.scss 2:9  root stylesheet";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(1, 19, 103);
+  font-family: 'Noto Sans';
+}
+
+/*Header*/
+.navbar {
+  background-color: rgb(184, 217, 252);
+  .liNav{
+    list-style: none;
+  }
+  .nav-pills .nav-link.active,
+  .show>.nav-pills .nav-link{
+      background: rgb(1, 19, 103) !important;
+  }
+}
+
+
+/*main index*/
+h1{
+  background-color:rgb(126, 205, 15);
+}
+
+
+/*footer*/
+.footerContainer{
+  width: 100%;
+  background-color: rgb(184, 217, 252);
+  padding-top: 20px;
+  .icon{
+    text-decoration: none;
+  }
+  .fa-facebook-f{
+    color: rgb(24, 119, 242);
+    font-size: 2rem;
+    }
+  .fa-instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+  }
+  .fa-tiktok {
+    color:rgb(1, 19, 103);
+    font-size: 2rem;
+  }
+  .fa-x-twitter{
+    color:rgb(119, 119, 119);
+    font-size: 2rem;
+  }
+  .fa-whatsapp{
+    color: rgb(37, 211, 102);
+    font-size: 2rem;
+  }
+  @media screen and (max-width:900px){
+    footContainer{
+      grid-template-columns: none;
+    }
+    .footerContainerDiv1{
+      width: 90%;
+      grid-gap:10px;
+      padding: 10px 0px;
+    }
+    .footerContainerDiv2{
+      width: 90%;
+       grid-gap:10px;
+      padding: 10px 0px;
+    }
+    .footerContainerDiv3{
+      width: 90%;
+      grid-gap:10px;
+      padding: 10px 0px;
+    }
+    .footerContainerDiv4{
+      width: 90%;
+      grid-gap:10px;
+      padding: 10px 0px;
+    }
+  }
+}
+
+/**Index**/
+.mainDiv{
+  .mainSection{
+    width:fit-content;
+    border: 2px solid rgb(1, 19, 103);
+    margin: 20px 10px 20px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.6);
+  }
+  .mainSectionTitle {
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+  .mainSectionText{
+    font-size: 1.2rem;
+    text-align: justify;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .staff{
+    width: 80%;
+    margin:0px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .mainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: auto;
+  }
+  .mainSectionText{
+    font-size: 0.8rem;
+    }
+  .staff{
+    width: 60%;
+  }
+}
+/*Medicamentos*/
+.deliveryMap{
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 10px;
+}
+
+.medLink{
+  background-color: rgb(1, 19, 103);
+  border-color: rgb(1, 19, 103);
+  color:aliceblue;
+}  
+.medLink:hover{
+  background-color: rgb(126, 205, 15);
+  border-color: rgb(126, 205, 15);
+  color: rgb(1, 19, 103);
+}
+
+/*Noticias*/
+.notiDiv{
+  margin-left: 50px;
+  .notiSection{
+    width:30%;
+    border: 2px solid rgb(1, 19, 103);
+    margin: 20px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.6);
+  }
+  .notiSectionTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+  .notiSectionText{
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .iframe{
+    width:80%;
+    height:60%;
+  }
+  .notiImg1{
+    width: 90%;
+  }
+  .notiImg2{
+    width: 60%;
+    transition: 2s;
+  }
+  .notiImg2:hover{
+    transform: scale(1.5);
+  }
+
+  .leerMas{
+    background-color: rgb(1, 19, 103);
+    border-color: rgb(1, 19, 103);
+    color:aliceblue;
+  }  
+  .leerMas:hover{
+    background-color: rgb(126, 205, 15);
+    border-color: rgb(126, 205, 15);
+    color: rgb(1, 19, 103);
+  }
+}
+
+@media screen and (max-width:900px) {
+  .notiDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width:fit-content;
+  }
+  .notiSectionText{
+    font-size: 0.8rem;
+    }
+}
+
+/*Tienda*/
+
+.tiendaLink{
+  background-color: rgb(1, 19, 103);
+  border-color: rgb(1, 19, 103);
+  color:aliceblue;
+}  
+
+.tiendaLink:hover{
+  background-color: rgb(126, 205, 15);
+  border-color: rgb(126, 205, 15);
+  color: rgb(1, 19, 103);
+}
+
+.galeria{
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 250px;
+  gap: 20px;
+  padding: 20px;
+}
+.contenedor{
+  border: 2px solid rgb(1, 19, 103);
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.6);
+  position:relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+ }
+
+.contenedor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s ease-in-out;
+}
+/* Estilo para el texto de aumento al hover */
+.contenedor .texto {
+  text-align: justify;
+  position: absolute;
+  text-shadow: 2px 2px 0px rgb(126, 205, 15);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  color:rgb(1, 19, 103);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contenedor .priceCard{
+  color:rgb(1, 19, 103);
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: rgb(126, 205, 15);
+  border-color:rgb(126, 205, 15) ;
+  text-align:center;
+  position: absolute;
+  bottom: -5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease-in-out;
+
+}
+.contenedor:hover img {
+  transform: scale(1.5); 
+  filter:initial;
+}
+
+.contenedor:hover .texto {
+  opacity: 1; 
+  color:rgb(1, 19, 103);
+}
+
+.contenedor .priceCard{
+  opacity: 1;
+  color:rgb(1, 19, 103);
+}
+
+@media screen and (max-width:900px){
+    .galeria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+/*Main contacto */
+.contactForm{
+  background-color: rgb(222, 238, 255);
+  width: 50%;
+  margin-bottom: 20px;
+  .formText{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .sendButton{
+    background-color: rgb(1, 19, 103);
+    border-color: rgb(1, 19, 103);
+    width: auto;
+  }
+  .sendButton:hover{
+    background-color: rgb(126, 205, 15);
+    border-color: rgb(126, 205, 15);
+    color: rgb(1, 19, 103);
+  }  
 }
