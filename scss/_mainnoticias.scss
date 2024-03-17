@@ -1,0 +1,56 @@
+.notiDiv{
+    margin-left: 50px;
+    .notiSection{
+      width:30%;
+      border: 2px solid map-get($colores , azul-cruz);
+      margin: 20px 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 10px;
+      box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.6);
+    }
+    .notiSectionTitle {
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: underline;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      }
+      
+    .notiSectionText{
+      font-size: 1.2rem;
+      padding-top: 10px;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+    .iframe{
+      width:80%;
+      height:60%;
+    }
+    .notiImg1{
+      width: 90%;
+    }
+    .notiImg2{
+      width: 60%;
+      transition: 2s;
+    }
+    .notiImg2:hover{
+      transform: scale(1.5);
+    }
+    .leerMas{
+      @include botoncito;
+    }
+  }
+  
+  @media screen and (max-width:900px) {
+    .notiDiv {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; 
+      width:fit-content;
+    }
+    .notiSectionText{
+      font-size: 0.8rem;
+      }
+  }

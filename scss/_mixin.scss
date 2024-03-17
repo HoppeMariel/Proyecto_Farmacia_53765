@@ -1,0 +1,10 @@
+@mixin botoncito{
+  background-color: map-get($colores , azul-cruz);
+  border-color: map-get($colores , azul-cruz);
+  color:aliceblue;
+  &:hover{
+    background-color: map-get($colores , verde-cruz);
+    border-color: map-get($colores , verde-cruz);
+    color: map-get($colores , azul-cruz);
+  }
+}

@@ -1,0 +1,79 @@
+.tiendaLink{
+  @include botoncito;
+}
+  .galeria{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 20px;
+    padding: 20px;
+  }
+  .contenedor{
+    border: 2px solid map-get($colores , azul-cruz);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.6);
+    position:relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+   }
+  
+  .contenedor img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 1s ease-in-out;
+  }
+  /* Estilo para el texto de aumento al hover */
+  .contenedor .texto {
+    text-align: justify;
+    position: absolute;
+    text-shadow: 2px 2px 0px map-get($colores , verde-cruz);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: map-get($colores , azul-cruz);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .contenedor .priceCard{
+    color: map-get($colores , azul-cruz);
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: map-get($colores , verde-cruz);
+    border-color: map-get($colores , verde-cruz);
+    text-align:center;
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease-in-out;
+  
+  }
+  .contenedor:hover img {
+    transform: scale(1.5); 
+    filter:initial;
+  }
+  
+  .contenedor:hover .texto {
+    opacity: 1; 
+    color: map-get($colores , azul-cruz);
+  }
+  
+  .contenedor .priceCard{
+    opacity: 1;
+    color: map-get($colores , azul-cruz);
+  }
+  
+  @media screen and (max-width:900px){
+      .galeria {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }  

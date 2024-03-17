@@ -1,0 +1,12 @@
+
+.navbar {
+    background-color: map-get($colores , celeste-bg);
+    .liNav{
+      list-style: none;
+    }
+    .nav-pills .nav-link.active,
+    .show>.nav-pills .nav-link{
+        background: map-get($colores , azul-cruz) !important;
+    }
+  }
+  

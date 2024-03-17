@@ -1,0 +1,57 @@
+.footerContainer{
+  width: 100%;
+  background-color: map-get($colores , celeste-bg);
+  padding-top: 20px;
+
+  .icon{
+    text-decoration: none;
+  }
+  .fa-facebook-f{
+    color: rgb(24, 119, 242);
+    font-size: 2rem;
+  }
+  .fa-instagram{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+  }
+  .fa-tiktok{
+    color: map-get($colores , azul-cruz);
+    font-size: 2rem;
+  }
+  .fa-x-twitter{
+    color:rgb(119, 119, 119);
+    font-size: 2rem;
+    }
+  .fa-whatsapp{
+    color: rgb(37, 211, 102);
+    font-size: 2rem;
+  }
+  @media screen and (max-width:900px){
+    footContainer{
+      grid-template-columns: none;
+    }
+    .footerContainerDiv1{
+      width: 90%;
+        grid-gap:10px;
+      padding: 10px 0px;
+    }
+    .footerContainerDiv2{
+      width: 90%;
+      grid-gap:10px;
+      padding: 10px 0px;
+    }
+    .footerContainerDiv3{
+      width: 90%;
+      grid-gap:10px;
+      padding: 10px 0px;
+    }
+    .footerContainerDiv4{
+      width: 90%;
+      grid-gap:10px;
+      padding: 10px 0px;
+    }
+  }
+}

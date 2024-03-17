@@ -1,0 +1,44 @@
+.mainDiv{
+  .mainSection{
+    width:fit-content;
+    border: 2px solid map-get($colores , azul-cruz);
+    margin: 20px 10px 20px 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.6);
+  }
+  .mainSectionTitle {
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+  .mainSectionText{
+    font-size: 1.2rem;
+    text-align: justify;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .staff{
+    width: 80%;
+    margin:0px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .mainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: auto;
+  }
+  .mainSectionText{
+    font-size: 0.8rem;
+    }
+  .staff{
+    width: 60%;
+  }
+}

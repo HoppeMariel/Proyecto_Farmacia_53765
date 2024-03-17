@@ -1,0 +1,12 @@
+.contactForm{
+    background-color: rgb(222, 238, 255);
+    width: 50%;
+    margin-bottom: 20px;
+    .formText{
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .sendButton{
+      @include botoncito;
+    }
+  }

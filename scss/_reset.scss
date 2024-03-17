@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: map-get($colores , azul-cruz);
+    font-family: 'Noto Sans';
+  }
+
+  h1{
+  background-color: map-get($colores , verde-cruz);
+}
