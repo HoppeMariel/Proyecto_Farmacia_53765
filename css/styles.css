@@ -15,11 +15,9 @@ h1 {
 .navbar {
   background-color: rgb(184, 217, 252);
 }
-
 .navbar .liNav {
   list-style: none;
 }
-
 .navbar .nav-pills .nav-link.active,
 .navbar .show > .nav-pills .nav-link {
   background: rgb(1, 19, 103) !important;
@@ -30,16 +28,13 @@ h1 {
   background-color: rgb(184, 217, 252);
   padding-top: 20px;
 }
-
 .footerContainer .icon {
   text-decoration: none;
 }
-
 .footerContainer .fa-facebook-f {
   color: rgb(24, 119, 242);
   font-size: 2rem;
 }
-
 .footerContainer .fa-instagram {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   background-clip: text;
@@ -47,22 +42,18 @@ h1 {
   -webkit-text-fill-color: transparent;
   font-size: 2rem;
 }
-
 .footerContainer .fa-tiktok {
   color: rgb(1, 19, 103);
   font-size: 2rem;
 }
-
 .footerContainer .fa-x-twitter {
   color: rgb(119, 119, 119);
   font-size: 2rem;
 }
-
 .footerContainer .fa-whatsapp {
   color: rgb(37, 211, 102);
   font-size: 2rem;
 }
-
 @media screen and (max-width: 900px) {
   .footerContainer footContainer {
     grid-template-columns: none;
@@ -88,8 +79,8 @@ h1 {
     padding: 10px 0px;
   }
 }
+
 .mainDiv .mainSection {
-  width: -moz-fit-content;
   width: fit-content;
   border: 2px solid rgb(1, 19, 103);
   margin: 20px 10px 20px 10px;
@@ -98,25 +89,27 @@ h1 {
   border-radius: 10px;
   box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.6);
 }
-
 .mainDiv .mainSectionTitle {
-  font-weight: bold;
+  font-weight: bolder;
   text-decoration: underline;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
 .mainDiv .mainSectionText {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: justify;
   padding-right: 10px;
   padding-left: 10px;
 }
-
+.mainDiv .historia {
+  width: 95%;
+}
+.mainDiv .mision {
+  height: 40vh;
+}
 .mainDiv .staff {
-  width: 80%;
-  margin: 0px;
-  padding: 0px;
+  padding-top: 20px;
+  width: 95%;
 }
 
 @media screen and (max-width: 900px) {
@@ -131,7 +124,7 @@ h1 {
     font-size: 0.8rem;
   }
   .staff {
-    width: 60%;
+    width: 80%;
   }
 }
 .deliveryMap {
@@ -145,7 +138,6 @@ h1 {
   border-color: rgb(1, 19, 103);
   color: aliceblue;
 }
-
 .medLink:hover {
   background-color: rgb(126, 205, 15);
   border-color: rgb(126, 205, 15);
@@ -157,7 +149,6 @@ h1 {
   border-color: rgb(1, 19, 103);
   color: aliceblue;
 }
-
 .tiendaLink:hover {
   background-color: rgb(126, 205, 15);
   border-color: rgb(126, 205, 15);
@@ -187,7 +178,6 @@ h1 {
 .contenedor img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
   transition: transform 1s ease-in-out;
 }
@@ -246,7 +236,6 @@ h1 {
 .notiDiv {
   margin-left: 50px;
 }
-
 .notiDiv .notiSection {
   width: 30%;
   border: 2px solid rgb(1, 19, 103);
@@ -256,46 +245,34 @@ h1 {
   border-radius: 10px;
   box-shadow: 10px 10px 10px -5px rgba(0, 0, 0, 0.6);
 }
-
 .notiDiv .notiSectionTitle {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   text-decoration: underline;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
 .notiDiv .notiSectionText {
   font-size: 1.2rem;
   padding-top: 10px;
   padding-right: 10px;
   padding-left: 10px;
 }
-
 .notiDiv .iframe {
   width: 80%;
   height: 60%;
 }
-
 .notiDiv .notiImg1 {
   width: 90%;
 }
-
 .notiDiv .notiImg2 {
-  width: 60%;
-  transition: 2s;
+  width: 70%;
 }
-
-.notiDiv .notiImg2:hover {
-  transform: scale(1.5);
-}
-
 .notiDiv .leerMas {
   background-color: rgb(1, 19, 103);
   border-color: rgb(1, 19, 103);
   color: aliceblue;
 }
-
 .notiDiv .leerMas:hover {
   background-color: rgb(126, 205, 15);
   border-color: rgb(126, 205, 15);
@@ -308,7 +285,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: -moz-fit-content;
     width: fit-content;
   }
   .notiSectionText {
@@ -317,25 +293,22 @@ h1 {
 }
 .contactForm {
   background-color: rgb(222, 238, 255);
-  width: 50%;
+  width: 60%;
   margin-bottom: 20px;
 }
-
 .contactForm .formText {
   font-size: 1.5rem;
   text-align: center;
 }
-
 .contactForm .sendButton {
   background-color: rgb(1, 19, 103);
   border-color: rgb(1, 19, 103);
   color: aliceblue;
 }
-
 .contactForm .sendButton:hover {
   background-color: rgb(126, 205, 15);
   border-color: rgb(126, 205, 15);
   color: rgb(1, 19, 103);
-} 
+}
 
 /*# sourceMappingURL=styles.css.map */
