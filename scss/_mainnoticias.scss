@@ -15,8 +15,7 @@
       text-decoration: underline;
       padding-top: 10px;
       padding-bottom: 10px;
-      }
-      
+      } 
     .notiSectionText{
       font-size: 1.2rem;
       padding-top: 10px;
@@ -31,11 +30,7 @@
       width: 90%;
     }
     .notiImg2{
-      width: 60%;
-      transition: 2s;
-    }
-    .notiImg2:hover{
-      transform: scale(1.5);
+      width: 70%;
     }
     .leerMas{
       @include botoncito;

@@ -9,22 +9,17 @@
     box-shadow: 10px 10px 10px -5px rgba(0,0,0,0.6);
   }
   .mainSectionTitle {
-    font-weight: bold;
+    font-weight: bolder;
     text-decoration: underline;
     padding-top: 10px;
     padding-bottom: 10px;
     }
   .mainSectionText{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: justify;
     padding-right: 10px;
     padding-left: 10px;
-  }
-  .staff{
-    width: 80%;
-    margin:0px;
-    padding: 0px;
-  }
+  }  
 }
 
 @media screen and (max-width:900px) {
@@ -39,6 +34,6 @@
     font-size: 0.8rem;
     }
   .staff{
-    width: 60%;
+    width: 80%;
   }
 }
